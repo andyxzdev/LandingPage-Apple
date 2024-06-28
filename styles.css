@@ -1,0 +1,1596 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Work Sans", sans-serif;
+}
+
+header {
+    background-color: #000;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10%;
+}
+
+.logo-header img {
+    width: 70px;
+}
+
+ul,
+li {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    font-size: 20px;
+}
+
+a,
+i {
+    color: #fff;
+    transition: .2s;
+}
+
+a:hover {
+    color: #ffffffb7;
+}
+
+i:hover {
+    color: #ffffffb7;
+}
+
+
+
+section .home {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+}
+
+section .list {
+    width: 100%;
+    height: 120vh;
+    margin-top: 30vh;
+}
+
+
+/* INICIO CSS IPHONE HOME */
+
+.list .item.active {
+    /* CLASSE DA DIV PAI DE TODAS AS DIV DE CONTEUDO (IMG+TEXT+BUTTON ETC) + CLASSE DA DIV QUE LEVA OS CONTEUDOS (IMG+TEXT+BUTTON ETC)
+    + A CLASSE QUE É CLASSE DOS ITENS QUE VAI FICAR VISIVEL NA TELA */
+    transform: translateX(0);
+    transition: .5s;
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+.list .item {
+    /* CLASSE DA DIV PAI DE TODAS AS DIV DE CONTEUDO (IMG+TEXT+BUTTON ETC) + CLASSE DA DIV QUE LEVA OS CONTEUDOS (IMG+TEXT+BUTTON ETC)
+   E É AQUI QUE VAI SER AS ALTERAÇOES DA DIV QUE NAO ESTIVER VISIVEL (OU SEJA,SEM O ACTIVE) */
+    transform: translateX(-60em);
+    transition: .5s;
+    opacity: 0;
+}
+
+
+.item {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.txt-iph1 {
+    color: #cacaca;
+    font-size: 130px;
+    margin-top: 10px;
+    line-height: 120px;
+    margin-left: 2em;
+}
+
+.txt-iph2 {
+    color: #cacaca;
+    font-size: 130px;
+    margin-top: 10px;
+    line-height: 120px;
+    margin-left: 2em;
+}
+
+.imgs-iphon img {
+    position: absolute;
+    margin-top: -60vh;
+    margin-left: 22em;
+    width: 45vw;
+}
+
+
+.infos-iphon {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 55vw;
+    margin-top: -50vh;
+    width: 40%;
+    position: absolute;
+    color: #000;
+}
+
+.infos-iphon h1 {
+    font-size: 80px;
+    color: #000;
+}
+
+.infos-iphon span {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.infos-iphon h3 {
+    font-size: 25px;
+}
+
+.infos-iphon p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.infos-iphon a button {
+    background-color: #000;
+    border-radius: 10px;
+    margin-top: 35px;
+    font-size: 20px;
+    border: none;
+    width: 40%;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.infos-iphon a button:hover {
+    transform: scale(1.0);
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 30px;
+}
+
+/*FIM CSS IPHONE HOME */
+
+/*------------------------------------- */
+
+
+/*INICIO CSS IPHONE2 HOME */
+
+.txt-iph11 {
+    color: #cacaca;
+    font-size: 130px;
+    margin-top: -490px;
+    line-height: 120px;
+    margin-left: 2em;
+}
+
+.txt-iph22 {
+    color: #cacaca;
+    font-size: 130px;
+    margin-top: 10px;
+    line-height: 120px;
+    margin-left: 2em;
+}
+
+.imgs-iphon2 {
+    margin-top: -50px;
+    position: absolute;
+    width: 100%;
+}
+
+.imgs-iphon2 img {
+    position: absolute;
+    margin-top: -60vh;
+    margin-left: 22em;
+    width: 45vw;
+}
+
+
+.infos-iphon2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 55vw;
+    margin-top: -55vh;
+    width: 40%;
+    position: absolute;
+    color: #000;
+}
+
+.infos-iphon2 h1 {
+    font-size: 80px;
+    color: #000;
+}
+
+.infos-iphon2 span {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.infos-iphon2 h3 {
+    font-size: 25px;
+}
+
+.infos-iphon2 p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.infos-iphon2 a button {
+    background-color: #000;
+    border-radius: 10px;
+    margin-top: 35px;
+    font-size: 20px;
+    border: none;
+    width: 40%;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.infos-iphon2 a button:hover {
+    transform: scale(1.0);
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 30px;
+}
+
+/*FIM CSS IPHONE2 HOME */
+
+
+
+
+#nextButton {
+    margin-left: 90vw;
+    margin-top: -95vh;
+    border: none;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+#nextButton i {
+    color: #000;
+    font-size: 60px;
+    transition: .4s;
+}
+
+#nextButton i:hover {
+    transform: scale(1.1);
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#prevButton {
+    margin-left: 9vw;
+    margin-top: -95vh;
+    border: none;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#prevButton i {
+    color: #000;
+    font-size: 60px;
+    transition: .4s;
+}
+
+#prevButton i:hover {
+    transform: scale(1.1);
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+
+
+/*----------------PRODUCTS------------------*/
+.products-home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -12vh;
+    padding: 30px 130px;
+}
+
+.products-home div {
+    display: flex;
+    flex-direction: column;
+
+    & a,
+    h4 {
+        color: #000;
+    }
+}
+
+.products-home h4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.products-home a:hover {
+    color: #00000077;
+    text-decoration: underline;
+}
+
+.products-home h4:hover {
+    color: #00000077;
+    text-decoration: underline;
+}
+
+#link-products {
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    align-items: center;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.mac-imgg {
+    margin-top: -10px;
+}
+
+.iphonee h4 {
+    margin-top: 45px;
+}
+
+.ipad h4 {
+    margin-top: 13px;
+}
+
+.appwtc h4 {
+    margin-top: 20px;
+}
+
+
+.novidades-container {
+    background-image: url('assets/backgrounds/bg1.2.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.novidades-infos h2,
+h4 {
+    color: #fff;
+    text-align: center;
+}
+
+.novidades-infos h2 {
+    font-size: 90px;
+    margin-top: 100px;
+}
+
+.novidades-infos h4 {
+    font-size: 30px;
+}
+
+.cards-novidades {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+    margin-top: 20vh;
+}
+
+.cards-novidades1 {
+    background-image: url('assets/prints/Capturar.png');
+    width: 430px;
+    height: 70vh;
+    background-size: cover;
+    border: 13px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.cards-novidades1:hover {
+    transform: scale(1.1);
+}
+
+
+.cards-novidades2 {
+    background-image: url('assets/prints/Capturar3.PNG');
+    width: 430px;
+    height: 70vh;
+    background-size: cover;
+    border: 13px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.cards-novidades2:hover {
+    transform: scale(1.1);
+}
+
+.cards-novidades3 {
+    background-image: url('assets/prints/Capturar2.PNG');
+    width: 430px;
+    height: 70vh;
+    background-size: cover;
+    border: 13px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.cards-novidades3:hover {
+    transform: scale(1.1);
+}
+
+
+.botao-novidades {
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-top: 85px;
+    font-size: 20px;
+    border: none;
+    width: 30%;
+    color: #000000;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+    margin-left: 33vw;
+    
+}
+
+.botao-novidades:hover {
+    transform: scale(1.0);
+    background-color: #030303;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+.acessorios-container {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.texto-acessorios {
+    display: flex;
+    flex-direction: column;
+
+    & h1 {
+        font-size: 90px;
+    }
+
+    & h3 {
+        font-size: 30px;
+    }
+}
+
+.acessorios {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 140px 90px;
+}
+
+.acessorios-infos {
+    text-align: left;
+
+    & h1 {
+        font-size: 70px;
+        line-height: 80px;
+        margin-top: -60px;
+    }
+
+    & p {
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+
+.acessorios-img {
+    width: 20px;
+
+    & img {
+        width: 270px;
+        margin-left: -190px;
+        margin-top: 90px;
+    }
+}
+
+
+.botao-acessorios {
+    background-color: #000000;
+    border-radius: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    border: none;
+    width: 210px;
+    color: #ffffff;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+    position: absolute;
+}
+
+.botao-acessorios:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 10px;
+}
+
+.appleDif-container {
+    background-image: url('assets/backgrounds/bg2.1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 110vh;
+    z-index: -1;
+}
+
+.infos-appleDif {
+    color: #fff;
+    margin-left: 70em;
+    position: absolute;
+    margin-top: 190px;
+
+    & h1 {
+        font-size: 70px;
+    }
+
+    & h3 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+}
+
+.motivos .motivo1 {
+    width: 280px;
+    height: 120px;
+    background-color: #adadad;
+    border-radius: 15px;
+    margin-left: 70em;
+    margin-top: 45em;
+    position: absolute;
+
+
+    & p {
+        padding-left: 20px;
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    & #box-appledif {
+        font-size: 30px;
+        padding-left: 19px;
+        margin-top: 10px;
+        position: absolute;
+    }
+}
+
+.motivos {
+    display: flex;
+    flex-direction: column;
+}
+
+.motivo2 {
+    width: 280px;
+    height: 140px;
+    background-color: #adadad;
+    border-radius: 15px;
+    margin-left: 70em;
+    margin-top: 60em;
+    position: absolute;
+
+
+    & p {
+        padding-left: 20px;
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 19px;
+    }
+
+    & #box-appledif {
+        font-size: 30px;
+        padding-left: 19px;
+        margin-top: 10px;
+        position: absolute;
+    }
+}
+
+.motivo3 {
+    width: 280px;
+    height: 120px;
+    background-color: #adadad;
+    border-radius: 15px;
+    margin-left: 97em;
+    margin-top: 44.9em;
+    position: absolute;
+
+
+    & p {
+        padding-left: 20px;
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 21px;
+    }
+
+    & #box-appledif {
+        font-size: 30px;
+        padding-left: 19px;
+        margin-top: 10px;
+        position: absolute;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.divider {
+    width: 330px;
+    height: 7px;
+    background-color: #000;
+    border: none;
+    border-radius: 220px;
+}
+
+.logo-e-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 130px 35em;
+}
+
+.text-footer {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1680px) {
+    header {
+        width: 100%;
+    }
+
+    section .home {
+        width: auto;
+    }
+
+    section .list {
+        width: auto;
+
+    }
+
+    .list .item.active {
+        width: auto;
+    }
+
+    .list .item {
+        width: auto;
+    }
+
+    .products-home {
+        margin-top: -35vh;
+    }
+
+    
+    .botao-novidades {
+        margin-left: 31vw;
+        margin-top: 95px;
+    }
+
+    .acessorios-container {
+        width: auto;
+    }
+
+    .appleDif-container {
+        width: auto;
+    }
+
+    footer {
+        width: auto;
+    }
+
+    .logo-e-divider {
+        margin: 130px 25em;
+        gap: 130px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .imgs-iphon img {
+        position: absolute;
+        margin-top: -95vh;
+        margin-left: 20em;
+        width: 45vw;
+    }
+
+    .txt-iph1 {
+        font-size: 120px;
+        margin-left: 1.5em;
+    }
+
+    .txt-iph2 {
+        font-size: 120px;
+        margin-left: 1.5em;
+    }
+
+    .infos-iphon {
+        margin-left: 55vw;
+        margin-top: -75vh;
+    }
+
+
+
+    .imgs-iphon2 img {
+        position: absolute;
+        margin-top: -95vh;
+        margin-left: 20em;
+        width: 45vw;
+    }
+
+    .txt-iph11 {
+        font-size: 120px;
+        margin-left: 1.5em;
+    }
+
+    .txt-iph22 {
+        font-size: 120px;
+        margin-left: 1.5em;
+    }
+
+    .infos-iphon2 {
+        margin-left: 55vw;
+        margin-top: -82vh;
+    }
+
+    #nextButton {
+        margin-top: -85vh;
+    }
+
+    #prevButton {
+        margin-top: -85vh;
+    }
+
+
+    .products-home {
+        margin-left: -30px;
+        padding: 30px 120px;
+    }
+
+    .novidades-container {
+        height: 170vh;
+    }
+
+    .cards-novidades1 {
+        width: 300px;
+        height: 400px;
+
+    }
+
+    .cards-novidades2 {
+        width: 300px;
+        height: 400px;
+    }
+
+    .cards-novidades3 {
+        width: 300px;
+        height: 400px;
+    }
+
+    .botao-novidades {
+        margin-left: 28vw;
+        margin-top: 125px;
+    }
+
+    .acessorios-container {
+        height: 120vh;
+    }
+
+    .texto-acessorios {
+        margin-top: -30px;
+    }
+
+    .acessorios {
+        margin: 90px 90px;
+        margin-left: 50px;
+    }
+
+    .botao-acessorios {
+        font-size: 15px;
+        width: 170px;
+    }
+
+    .acessorios-infos h1 {
+        font-size: 60px;
+        line-height: 60px;
+
+    }
+
+    .acessorios-img img {
+        margin-left: -160px;
+        width: 240px;
+    }
+
+
+    .appleDif-container {
+        height: 160vh;
+    }
+
+    .infos-appleDif {
+        margin-left: 55em;
+    }
+
+    .motivos .motivo1 {
+        margin-left: 55em;
+    }
+
+    .motivo2 {
+        margin-left: 55em;
+    }
+
+    .motivo3 {
+        margin-left: 84em;
+    }
+
+    footer {
+        height: 70vh;
+    }
+
+
+    .logo-e-divider {
+        margin: 130px 25em;
+        gap: 110px;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    .imgs-iphon img {
+        position: absolute;
+        margin-top: -35vh;
+        margin-left: 2em;
+        width: 65vw;
+    }
+
+    .txt-iph1 {
+        font-size: 110px;
+        margin-left: -4px;
+        line-height: 90px;
+        margin-top: -5vh;
+        color: #e2e2e2;
+    }
+
+    .txt-iph2 {
+        font-size: 110px;
+        margin-left: -4px;
+        line-height: 90px;
+        color: #e2e2e2;
+
+    }
+
+    .infos-iphon {
+        margin-left: 55vw;
+        margin-top: -35vh;
+    }
+
+    .infos-iphon h1 {
+        font-size: 50px;
+    }
+
+    .infos-iphon span {
+        font-size: 18px;
+    }
+
+    .infos-iphon h3 {
+        font-size: 23px;
+        margin-top: 20px;
+    }
+
+    .infos-iphon p {
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    .infos-iphon a button {
+        font-size: 15px;
+        width: 50%;
+    }
+
+    .imgs-iphon2 img {
+        position: absolute;
+        margin-top: -36vh;
+        margin-left: 2em;
+        width: 65vw;
+    }
+
+    .txt-iph11 {
+        font-size: 110px;
+        margin-left: -4px;
+        line-height: 90px;
+        margin-top: -30vh;
+        color: #e2e2e2;
+    }
+
+    .txt-iph22 {
+        font-size: 110px;
+        margin-left: -4px;
+        line-height: 90px;
+        color: #e2e2e2;
+
+    }
+
+    .infos-iphon2 {
+        margin-left: 55vw;
+        margin-top: -39vh;
+    }
+
+    .infos-iphon2 h1 {
+        font-size: 50px;
+    }
+
+    .infos-iphon2 span {
+        font-size: 18px;
+    }
+
+    .infos-iphon2 h3 {
+        font-size: 23px;
+        margin-top: 20px;
+    }
+
+    .infos-iphon2 p {
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    .infos-iphon2 a button {
+        font-size: 15px;
+        width: 50%;
+    }
+
+    #nextButton {
+        margin-top: -95vh;
+    }
+
+    #prevButton {
+        margin-top: -95vh;
+    }
+
+
+    .products-home {
+        margin-top: -65vh;
+        margin-left: -120px;
+        gap: 60px;
+    }
+
+    .products-home img {
+        width: 120px;
+    }
+
+    .mac-imgg img {
+        width: 210px;
+    }
+
+    .iphonee h4 {
+        margin-top: 18px;
+    }
+
+    .ipad h4 {
+        margin-top: 12px;
+    }
+
+    .ipad img {
+        margin-top: -15px;
+    }
+
+    .appwtc h4 {
+        margin-top: 20px;
+    }
+
+    .novidades-container {
+        height: 80vh;
+    }
+
+    .cards-novidades1 {
+        margin-top: -120px;
+        width: 210px;
+        height: 400px;
+
+    }
+
+    .cards-novidades2 {
+        margin-top: -120px;
+        width: 210px;
+        height: 400px;
+    }
+
+    .cards-novidades3 {
+        margin-top: -120px;
+        width: 210px;
+        height: 400px;
+    }
+
+    .botao-novidades {
+        margin-left: 27vw;
+        margin-top: 70px;
+        width: 350px;
+    }
+
+    .acessorios-container {
+        height: 130vh;
+    }
+
+
+    .texto-acessorios {
+
+        margin-top: -30px;
+    }
+
+    .acessorios {
+        margin: 0px 90px;
+        margin-left: -120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao-acessorios {
+        font-size: 15px;
+        width: 170px;
+    }
+
+    .acessorios-infos h1 {
+        font-size: 60px;
+        line-height: 60px;
+        margin-top: 125px;
+
+    }
+
+    .acessorios-img img {
+        margin-left: 210px;
+        width: 240px;
+        margin-top: -180px;
+    }
+
+
+    .appleDif-container {
+        height: 120vh;
+        background-position: 40%;
+    }
+
+    .infos-appleDif {
+        margin-left: 22em;
+    }
+
+    .infos-appleDif h1 {
+        font-size: 60px;
+    }
+
+    .infos-appleDif h3 {
+        font-size: 20px;
+    }
+
+    .motivos .motivo1 {
+        margin-left: 32em;
+        margin-top: 52vh;
+    }
+
+    .motivo2 {
+        margin-left: 32em;
+        margin-top: 72vh;
+    }
+
+    .motivo3 {
+        margin-left: 32em;
+        margin-top: 93vh;
+    }
+
+    footer {
+        height: 50vh;
+    }
+
+    .text-footer {
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+
+    .logo-e-divider {
+        margin: 130px 30px;
+        gap: 20px;
+    }
+
+    .divider {
+        width: 230px;
+        height: 7px;
+        background-color: #000;
+        border: none;
+        border-radius: 220px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 25px 10%;
+    }
+
+    .logo-header img {
+        width: 45px;
+    }
+
+    ul,
+    li {
+        gap: 18px;
+        font-size: 15px;
+    }
+
+    .imgs-iphon img {
+        position: absolute;
+        margin-top: -35vh;
+        margin-left: -1em;
+        width: 75vw;
+    }
+
+    .txt-iph1 {
+        font-size: 80px;
+        margin-left: -4px;
+        line-height: 90px;
+        margin-top: -15vh;
+        color: #ececec;
+    }
+
+    .txt-iph2 {
+        font-size: 80px;
+        margin-left: -15px;
+        line-height: 90px;
+        color: #ececec;
+
+    }
+
+    .infos-iphon {
+        margin-left: 55vw;
+        margin-top: -35vh;
+    }
+
+    .infos-iphon h1 {
+        font-size: 30px;
+    }
+
+    .infos-iphon span {
+        font-size: 13px;
+    }
+
+
+    .infos-iphon h3 {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .infos-iphon p {
+        font-size: 13px;
+        margin-top: 35px;
+    }
+
+
+    .imgs-iphon2 img {
+        position: absolute;
+        margin-top: -35vh;
+        margin-left: -1em;
+        width: 75vw;
+    }
+
+    .txt-iph11 {
+        font-size: 80px;
+        margin-left: -4px;
+        line-height: 90px;
+        margin-top: -40vh;
+        color: #ececec;
+    }
+
+    .txt-iph22 {
+        font-size: 80px;
+        margin-left: -40px;
+        line-height: 90px;
+        color: #ececec;
+
+    }
+
+    .infos-iphon2 {
+        margin-left: 55vw;
+        margin-top: -40vh;
+    }
+
+    .infos-iphon2 h1 {
+        font-size: 30px;
+    }
+
+    .infos-iphon2 span {
+        font-size: 13px;
+    }
+
+
+    .infos-iphon2 h3 {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .infos-iphon2 p {
+        font-size: 13px;
+        margin-top: 35px;
+    }
+
+    .infos-iphon2 a button {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .infos-iphon a button {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    #nextButton {
+        margin-top: -98vh;
+        margin-left: 87vw;
+        width: 50px;
+    }
+
+    #nextButton:hover {
+        transform: scale(1.1);
+        background-color: #000;
+        color: #fff;
+        border-radius: 20px;
+    }
+
+    #nextButton i:hover {
+        color: #fff;
+        border-radius: 20px;
+        border: none;
+    }
+
+    #nextButton i {
+        font-size: 30px;
+        color: #616161;
+    }
+
+
+    #prevButton i {
+        font-size: 30px;
+        color: #616161;
+    }
+
+    #prevButton {
+        margin-top: -98vh;
+        margin-left: 2vw;
+        width: 50px;
+    }
+
+    #prevButton:hover {
+        transform: scale(1.1);
+        background-color: #000;
+        color: #fff;
+        border-radius: 20px;
+    }
+
+    #prevButton i:hover {
+        color: #fff;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .products-home {
+        display: flex;
+        flex-direction: column;
+        margin-top: -75vh;
+        margin-left: 5px;
+        gap: 90px;
+    }
+
+    .products-home img {
+        width: 120px;
+    }
+
+    .mac-imgg img {
+        width: 310px;
+    }
+
+    .appwtc img {
+        margin-left: 40px;
+    }
+
+
+    .novidades-container {
+        height: 175vh;
+    }
+
+    .novidades-container h2 {
+        font-size: 55px;
+    }
+
+    .novidades-container h4 {
+        font-size: 18px;
+    }
+
+    .cards-novidades {
+        display: flex;
+        flex-direction: column;
+        gap: 170px;
+    }
+
+    .botao-novidades {
+        width: 90%;
+        font-size: 16px;
+        margin-left: 3vw;
+    }
+
+    .acessorios-container {
+        width: 100%;
+        height: 140vh;
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    .texto-acessorios h1 {
+        font-size: 60px;
+    }
+
+    .texto-acessorios h3 {
+        font-size: 20px;
+    }
+
+    .acessorios-infos {
+        text-align: left;
+        margin-left: 80px;
+        margin-top: 30px;
+
+        & h1 {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        & p {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+
+    .acessorios-img {
+
+        & img {
+            width: 200px;
+            margin-left: 140px;
+
+        }
+    }
+
+    .appleDif-container {
+        height: 120vh;
+        margin: 0;
+        text-align: center;
+    }
+
+    .infos-appleDif {
+        margin-left: 6em;
+    }
+
+    .infos-appleDif h1 {
+        font-size: 40px;
+    }
+
+    .infos-appleDif h3 {
+        font-size: 13px;
+    }
+
+    .motivos .motivo1 {
+        flex-direction: column;
+        text-align: left;
+        margin-left: 9em;
+        margin-top: 52vh;
+    }
+
+    .motivo2 {
+        flex-direction: column;
+        text-align: left;
+        margin-left: 9em;
+        margin-top: 72vh;
+    }
+
+    .motivo3 {
+        flex-direction: column;
+        text-align: left;
+        margin-left: 9em;
+        margin-top: 93vh;
+    }
+
+    footer {
+        height: 40vh;
+    }
+
+    .text-footer {
+        font-size: 10px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .logo-e-divider {
+        margin: 130px 30px;
+        gap: 40px;
+    }
+
+    .logo-footer img {
+        width: 50px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    #nextButton {
+        margin-top: -96vh;
+    }
+
+    #prevButton {
+        margin-top: -96vh;
+    }
+
+    .products-home {
+        margin-top: -65vh;
+    }
+
+    .novidades-container {
+        height: 190vh;
+    }
+
+    .acessorios-container{
+        height: 160vh;
+    }
+
+    .infos-appleDif {
+        margin-left: 3em;
+    }
+
+    .motivos .motivo1 {
+       
+        margin-left: 6em;
+       
+    }
+
+    .motivo2 {
+      
+        margin-left: 6em;
+       
+    }
+
+    .motivo3 {
+        margin-left: 6em;
+    }
+
+    footer {
+        height: 45vh;
+    }
+
+    .text-footer {
+        font-size: 9px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 393px) {
+
+    .logo-header img {
+        width: 30px;
+    }
+
+    #nextButton {
+        margin-top: -96vh;
+        margin-left: 85vw;
+        width: 50px;
+    }
+
+    #nextButton {
+        margin-top: -96vh;
+    }
+
+
+    .products-home {
+        margin-top: -59vh;
+    }
+
+    .appwtc img {
+        margin-left: 10px;
+    }
+
+    .novidades-container {
+        height: 210vh;
+    }
+
+    .acessorios-container{
+        height: 170vh;
+    }
+
+    .infos-appleDif {
+        margin-left: 2em;
+    }
+
+    .motivos .motivo1 {
+       
+        margin-left: 5em;
+       
+    }
+
+    .motivo2 {
+      
+      margin-left: 5em;
+       
+    }
+
+    .motivo3 {
+      margin-left: 5em;
+    }
+
+    footer {
+        height: 50vh;
+    }
+
+    .text-footer {
+        font-size: 10px;
+        margin-top: 8px;
+        
+    }
+}
