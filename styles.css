@@ -1557,11 +1557,15 @@ footer {
     }
 
     .novidades-container {
-        height: 210vh;
+        height: 220vh;
     }
 
     .acessorios-container{
         height: 170vh;
+    }
+
+    .appleDif-container{
+        height: 140vh;
     }
 
     .infos-appleDif {
